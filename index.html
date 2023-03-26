@@ -18,11 +18,8 @@
 						 { name: "John Carte", age: 50 }
 						];
 				
-				var x=[];
-				employees.filter(function(val){
-					if(val.name.indexOf("John")>=0){
-					x.push(val);
-					}
+				var x=employees.filter(function(val){
+					return val.name.indexOf("John")>=0
 				})
 				console.log(x);
 			
